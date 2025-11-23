@@ -13,6 +13,13 @@ interface QuizResult {
   date: string;
   timeTaken: string;
 }
+
+type PerformanceItem = {
+  name: string;
+  value: number;
+  color: string;
+};
+
 export default function QuizPerformanceDashboard() {
   const [results, setResults] = useState<QuizResult[]>([]);
     const navigate = useNavigate();
@@ -115,29 +122,30 @@ export default function QuizPerformanceDashboard() {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           {/* Pie Chart - Performance Distribution */}
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
-            <h2 className="text-2xl font-bold text-white mb-6 text-center">Performance Overview</h2>
-            <ResponsiveContainer width="100%" height={300}>
-              <PieChart>
-                <Pie
-                  data={performanceData}
-                  cx="50%"
-                  cy="50%"
-                  labelLine={false}
-                  label={({ name, value }) => `${name}: ${value}`}
-                  outerRadius={100}
-                  fill="#8884d8"
-                  dataKey="value"
-                >
-                  {performanceData.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={entry.color} />
-                  ))}
-                </Pie>
-                <Tooltip formatter={(value: number) => `${value} quiz${value > 1 ? 'zes' : ''}`} />
-                <Legend />
-              </PieChart>
-            </ResponsiveContainer>
-          </div>
+         <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
+  <h2 className="text-2xl font-bold text-white mb-6 text-center">Performance Overview</h2>
+  <ResponsiveContainer width="100%" height={300}>
+    <PieChart>
+      <Pie
+        data={performanceData}
+        cx="50%"
+        cy="50%"
+        labelLine={false}
+        label={(props) => `${props.name ?? "Unknown"}: ${props.value ?? 0}`}
+        outerRadius={100}
+        fill="#8884d8"
+        dataKey="value"
+      >
+        {performanceData.map((entry: PerformanceItem, index: number) => (
+          <Cell key={`cell-${index}`} fill={entry.color} />
+        ))}
+      </Pie>
+      <Tooltip formatter={(value: number) => `${value} quiz${value > 1 ? "zes" : ""}`} />
+      <Legend />
+    </PieChart>
+  </ResponsiveContainer>
+</div>
+
           {/* Bar Chart - Best & Average per Quiz */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20">
             <h2 className="text-2xl font-bold text-white mb-6 text-center">Best vs Average Score</h2>

@@ -3,13 +3,13 @@ import { useNavigate } from "react-router";
 import { Globe, Code, Palette, Zap, Layout, Terminal } from "lucide-react";
 import quizzes from "../../../Server/db.json";
 import QuizModal from "../QuizPage/quizModal";
-import { useAuth } from "../../Routes/Route";
+// import { useAuth } from "../../Routes/Route";
 const QuizDashboard = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedQuizType, setSelectedQuizType] = useState<keyof typeof quizzes["quizzes"] | null>(null);
   const [currentUser, setCurrentUser] = useState<{ name: string; id: string } | null>(null);
   const navigate = useNavigate();
-  const { user } = useAuth();
+  // const { user } = useAuth();
   const quizCategories = quizzes.quizzes || quizzes;
   const topics = Object.entries(quizCategories).map(([key, value]) => ({
     ...value,
