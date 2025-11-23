@@ -4,12 +4,12 @@ import { createContext, useContext, useEffect, useState, type ReactNode } from "
 
 import Signup from "../pages/Auth/Signup";
 import Login from "../pages/Auth/Login";
-import QuizDashboard from "../pages/Home/Dashboard";
 import Profile from "../pages/Profile";
 import Settings from "../pages/Settingspage";
 import Navbar from "../component/Navbar";
 import QuizPerformanceDashboard from "../pages/performance";
 import NotificationsPage from "../pages/Notificationpage/Notification";
+import QuizDashboard from "../pages/Home/Dashboard";
 
 // ───────────────────────────── Auth Context ─────────────────────────────
 type AuthContextType = {
