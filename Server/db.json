@@ -1,0 +1,3610 @@
+{
+  "users": [
+    {
+      "id": "X4E1",
+      "name": "Azino Famous",
+      "email": "famousschnd2@gmail.com",
+      "password": "Azino123456789"
+    },
+    {
+      "id": "D7C2",
+      "name": "Azino Famous",
+      "email": "famousschnd2@gmail.com",
+      "password": "Azino123456789"
+    }
+  ],
+  "quizzes": {
+    "General": {
+      "id": "General",
+      "title": "Web Development",
+      "icon": "Globe",
+      "description": "Test your knowledge of web development history, core concepts, and fundamental technologies that power the modern web.",
+      "color": "#3B82F6",
+      "questions": [
+        {
+          "id": "wh_1a82",
+          "question": "Who is credited with inventing the World Wide Web?",
+          "answers": [
+            {
+              "text": "Bill Gates",
+              "correct": false
+            },
+            {
+              "text": "Tim Berners-Lee",
+              "correct": true
+            },
+            {
+              "text": "Steve Jobs",
+              "correct": false
+            },
+            {
+              "text": "Linus Torvalds",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "wh_3b47",
+          "question": "In which year was the World Wide Web first introduced?",
+          "answers": [
+            {
+              "text": "1989",
+              "correct": true
+            },
+            {
+              "text": "1995",
+              "correct": false
+            },
+            {
+              "text": "1985",
+              "correct": false
+            },
+            {
+              "text": "2000",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "wh_2c59",
+          "question": "What was the first web browser called?",
+          "answers": [
+            {
+              "text": "Mosaic",
+              "correct": false
+            },
+            {
+              "text": "WorldWideWeb",
+              "correct": true
+            },
+            {
+              "text": "Netscape Navigator",
+              "correct": false
+            },
+            {
+              "text": "Internet Explorer",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "wh_9d33",
+          "question": "Which company created the first popular graphical web browser?",
+          "answers": [
+            {
+              "text": "Microsoft",
+              "correct": false
+            },
+            {
+              "text": "Netscape",
+              "correct": true
+            },
+            {
+              "text": "Google",
+              "correct": false
+            },
+            {
+              "text": "Apple",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "wh_8e12",
+          "question": "What does 'WWW' stand for?",
+          "answers": [
+            {
+              "text": "World Web Wide",
+              "correct": false
+            },
+            {
+              "text": "Wide World Web",
+              "correct": false
+            },
+            {
+              "text": "World Wide Web",
+              "correct": true
+            },
+            {
+              "text": "Web World Wide",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "wh_7f45",
+          "question": "What is the main purpose of HTML in web development?",
+          "answers": [
+            {
+              "text": "To style a webpage",
+              "correct": false
+            },
+            {
+              "text": "To structure a webpage",
+              "correct": true
+            },
+            {
+              "text": "To connect to a server",
+              "correct": false
+            },
+            {
+              "text": "To store user data",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "wh_4g63",
+          "question": "What was CSS created to handle?",
+          "answers": [
+            {
+              "text": "Database management",
+              "correct": false
+            },
+            {
+              "text": "Webpage interactivity",
+              "correct": false
+            },
+            {
+              "text": "Webpage styling and layout",
+              "correct": true
+            },
+            {
+              "text": "Server-side logic",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "wh_6h27",
+          "question": "Which language was introduced to add interactivity to web pages?",
+          "answers": [
+            {
+              "text": "HTML",
+              "correct": false
+            },
+            {
+              "text": "CSS",
+              "correct": false
+            },
+            {
+              "text": "JavaScript",
+              "correct": true
+            },
+            {
+              "text": "SQL",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "wh_5j11",
+          "question": "When was JavaScript first created?",
+          "answers": [
+            {
+              "text": "1990",
+              "correct": false
+            },
+            {
+              "text": "1995",
+              "correct": true
+            },
+            {
+              "text": "2001",
+              "correct": false
+            },
+            {
+              "text": "1989",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "wh_2k84",
+          "question": "Who created JavaScript?",
+          "answers": [
+            {
+              "text": "Brendan Eich",
+              "correct": true
+            },
+            {
+              "text": "Mark Zuckerberg",
+              "correct": false
+            },
+            {
+              "text": "Jeff Bezos",
+              "correct": false
+            },
+            {
+              "text": "Larry Page",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "wh_3l72",
+          "question": "What does the term 'frontend' refer to in web development?",
+          "answers": [
+            {
+              "text": "The server-side code",
+              "correct": false
+            },
+            {
+              "text": "The client-facing part of a website",
+              "correct": true
+            },
+            {
+              "text": "Database management",
+              "correct": false
+            },
+            {
+              "text": "The backend of the application",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "wh_1m91",
+          "question": "Which of the following is NOT a frontend technology?",
+          "answers": [
+            {
+              "text": "HTML",
+              "correct": false
+            },
+            {
+              "text": "CSS",
+              "correct": false
+            },
+            {
+              "text": "JavaScript",
+              "correct": false
+            },
+            {
+              "text": "Node.js",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "wh_8n65",
+          "question": "What does the term 'backend' refer to?",
+          "answers": [
+            {
+              "text": "The part of a website users interact with",
+              "correct": false
+            },
+            {
+              "text": "Server-side logic and database interaction",
+              "correct": true
+            },
+            {
+              "text": "Browser rendering",
+              "correct": false
+            },
+            {
+              "text": "Designing webpage layouts",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "wh_0p33",
+          "question": "Which protocol is used to transfer web pages over the Internet?",
+          "answers": [
+            {
+              "text": "FTP",
+              "correct": false
+            },
+            {
+              "text": "SMTP",
+              "correct": false
+            },
+            {
+              "text": "HTTP",
+              "correct": true
+            },
+            {
+              "text": "SSH",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "wh_9q77",
+          "question": "What is the secure version of HTTP called?",
+          "answers": [
+            {
+              "text": "HTTP+",
+              "correct": false
+            },
+            {
+              "text": "HTTPS",
+              "correct": true
+            },
+            {
+              "text": "HTTP2",
+              "correct": false
+            },
+            {
+              "text": "SSL",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "wh_4r92",
+          "question": "Which of the following is a popular backend language?",
+          "answers": [
+            {
+              "text": "Python",
+              "correct": true
+            },
+            {
+              "text": "CSS",
+              "correct": false
+            },
+            {
+              "text": "HTML",
+              "correct": false
+            },
+            {
+              "text": "XML",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "wh_7s10",
+          "question": "Which of these introduced the concept of responsive design?",
+          "answers": [
+            {
+              "text": "HTML",
+              "correct": false
+            },
+            {
+              "text": "CSS3",
+              "correct": true
+            },
+            {
+              "text": "JavaScript",
+              "correct": false
+            },
+            {
+              "text": "PHP",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "wh_3t25",
+          "question": "What is the main purpose of a web server?",
+          "answers": [
+            {
+              "text": "To display client-side code",
+              "correct": false
+            },
+            {
+              "text": "To store and serve website content",
+              "correct": true
+            },
+            {
+              "text": "To compile JavaScript",
+              "correct": false
+            },
+            {
+              "text": "To design HTML pages",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "wh_5u53",
+          "question": "What was the first version of HTML officially released?",
+          "answers": [
+            {
+              "text": "HTML 1.0",
+              "correct": true
+            },
+            {
+              "text": "HTML 2.0",
+              "correct": false
+            },
+            {
+              "text": "HTML 3.0",
+              "correct": false
+            },
+            {
+              "text": "HTML5",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "wh_6v39",
+          "question": "Which organization maintains web standards today?",
+          "answers": [
+            {
+              "text": "Google",
+              "correct": false
+            },
+            {
+              "text": "W3C (World Wide Web Consortium)",
+              "correct": true
+            },
+            {
+              "text": "Mozilla",
+              "correct": false
+            },
+            {
+              "text": "Netscape",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "HTML": {
+      "id": "HTML",
+      "title": "HTML",
+      "icon": "Code2",
+      "description": "Master the fundamentals of HTML, the markup language that structures all web content and forms the backbone of every website.",
+      "color": "#E34F26",
+      "questions": [
+        {
+          "id": "qz_htm01",
+          "question": "What does HTML stand for?",
+          "answers": [
+            {
+              "text": "HyperText Markup Language",
+              "correct": true
+            },
+            {
+              "text": "HighText Machine Language",
+              "correct": false
+            },
+            {
+              "text": "Hyperlinks and Text Markup Language",
+              "correct": false
+            },
+            {
+              "text": "Home Tool Markup Language",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm02",
+          "question": "Which tag is used to create a hyperlink?",
+          "answers": [
+            {
+              "text": "<link>",
+              "correct": false
+            },
+            {
+              "text": "<a>",
+              "correct": true
+            },
+            {
+              "text": "<href>",
+              "correct": false
+            },
+            {
+              "text": "<anchor>",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm03",
+          "question": "Which attribute specifies the URL of a link?",
+          "answers": [
+            {
+              "text": "src",
+              "correct": false
+            },
+            {
+              "text": "href",
+              "correct": true
+            },
+            {
+              "text": "url",
+              "correct": false
+            },
+            {
+              "text": "link",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm04",
+          "question": "Which tag is used to display an image?",
+          "answers": [
+            {
+              "text": "<img>",
+              "correct": true
+            },
+            {
+              "text": "<image>",
+              "correct": false
+            },
+            {
+              "text": "<picture>",
+              "correct": false
+            },
+            {
+              "text": "<src>",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm05",
+          "question": "What attribute provides alternative text for an image (important for accessibility)?",
+          "answers": [
+            {
+              "text": "title",
+              "correct": false
+            },
+            {
+              "text": "alt",
+              "correct": true
+            },
+            {
+              "text": "caption",
+              "correct": false
+            },
+            {
+              "text": "desc",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm06",
+          "question": "Which element defines the main heading of a page?",
+          "answers": [
+            {
+              "text": "<header>",
+              "correct": false
+            },
+            {
+              "text": "<h1>",
+              "correct": true
+            },
+            {
+              "text": "<title>",
+              "correct": false
+            },
+            {
+              "text": "<head>",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm07",
+          "question": "Which tag is used to group table rows?",
+          "answers": [
+            {
+              "text": "<thead>",
+              "correct": false
+            },
+            {
+              "text": "<tbody>",
+              "correct": true
+            },
+            {
+              "text": "<tr>",
+              "correct": false
+            },
+            {
+              "text": "<table-row>",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm08",
+          "question": "Which attribute makes a form input required before submission?",
+          "answers": [
+            {
+              "text": "mandatory",
+              "correct": false
+            },
+            {
+              "text": "required",
+              "correct": true
+            },
+            {
+              "text": "validate",
+              "correct": false
+            },
+            {
+              "text": "necessary",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm09",
+          "question": "Which doctype declaration is correct for HTML5?",
+          "answers": [
+            {
+              "text": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\">",
+              "correct": false
+            },
+            {
+              "text": "<!DOCTYPE html>",
+              "correct": true
+            },
+            {
+              "text": "<!DOCTYPE HTML5>",
+              "correct": false
+            },
+            {
+              "text": "<!DOCTYPE HTML SYSTEM>",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm10",
+          "question": "Which element is used to include JavaScript in an HTML page?",
+          "answers": [
+            {
+              "text": "<script>",
+              "correct": true
+            },
+            {
+              "text": "<js>",
+              "correct": false
+            },
+            {
+              "text": "<javascript>",
+              "correct": false
+            },
+            {
+              "text": "<code>",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm11",
+          "question": "Which HTML attribute is used to define inline styles?",
+          "answers": [
+            {
+              "text": "class",
+              "correct": false
+            },
+            {
+              "text": "style",
+              "correct": true
+            },
+            {
+              "text": "css",
+              "correct": false
+            },
+            {
+              "text": "design",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm12",
+          "question": "Which tag is semantic and intended to contain navigation links?",
+          "answers": [
+            {
+              "text": "<nav>",
+              "correct": true
+            },
+            {
+              "text": "<navigation>",
+              "correct": false
+            },
+            {
+              "text": "<menu>",
+              "correct": false
+            },
+            {
+              "text": "<links>",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm13",
+          "question": "Which element is used for the document metadata (like character set and title)?",
+          "answers": [
+            {
+              "text": "<meta>",
+              "correct": false
+            },
+            {
+              "text": "<head>",
+              "correct": true
+            },
+            {
+              "text": "<body>",
+              "correct": false
+            },
+            {
+              "text": "<html>",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm14",
+          "question": "Which input type is used to accept an email address with built-in validation?",
+          "answers": [
+            {
+              "text": "text",
+              "correct": false
+            },
+            {
+              "text": "email",
+              "correct": true
+            },
+            {
+              "text": "mail",
+              "correct": false
+            },
+            {
+              "text": "address",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm15",
+          "question": "Which tag creates an ordered (numbered) list?",
+          "answers": [
+            {
+              "text": "<ul>",
+              "correct": false
+            },
+            {
+              "text": "<ol>",
+              "correct": true
+            },
+            {
+              "text": "<li>",
+              "correct": false
+            },
+            {
+              "text": "<list>",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm16",
+          "question": "Which attribute on the <a> tag opens the link in a new browser tab?",
+          "answers": [
+            {
+              "text": "target=\"_blank\"",
+              "correct": true
+            },
+            {
+              "text": "new=\"true\"",
+              "correct": false
+            },
+            {
+              "text": "open=\"tab\"",
+              "correct": false
+            },
+            {
+              "text": "rel=\"noopener\"",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm17",
+          "question": "What is the purpose of the <meta name=\"viewport\"> tag?",
+          "answers": [
+            {
+              "text": "To link a stylesheet for printing",
+              "correct": false
+            },
+            {
+              "text": "To control layout on mobile browsers and responsive behavior",
+              "correct": true
+            },
+            {
+              "text": "To include JavaScript libraries",
+              "correct": false
+            },
+            {
+              "text": "To define character encoding",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm18",
+          "question": "Which HTML5 element is used to draw graphics via scripting (e.g., JavaScript)?",
+          "answers": [
+            {
+              "text": "<svg>",
+              "correct": false
+            },
+            {
+              "text": "<canvas>",
+              "correct": true
+            },
+            {
+              "text": "<draw>",
+              "correct": false
+            },
+            {
+              "text": "<graphic>",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm19",
+          "question": "Which element represents a self-contained composition in a document, such as a blog post or article?",
+          "answers": [
+            {
+              "text": "<section>",
+              "correct": false
+            },
+            {
+              "text": "<article>",
+              "correct": true
+            },
+            {
+              "text": "<div>",
+              "correct": false
+            },
+            {
+              "text": "<aside>",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_htm20",
+          "question": "Which character entity is used to represent a non-breaking space in HTML?",
+          "answers": [
+            {
+              "text": "&",
+              "correct": false
+            },
+            {
+              "text": "&nbsp;",
+              "correct": true
+            },
+            {
+              "text": "<",
+              "correct": false
+            },
+            {
+              "text": "&copy;",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "CSS": {
+      "id": "CSS",
+      "title": "CSS",
+      "icon": "Palette",
+      "description": "Explore styling and design with CSS, learn how to create beautiful, responsive layouts and bring your web pages to life.",
+      "color": "#1572B6",
+      "questions": [
+        {
+          "id": "qz_css01",
+          "question": "What does CSS stand for?",
+          "answers": [
+            {
+              "text": "Cascading Style Sheets",
+              "correct": true
+            },
+            {
+              "text": "Colorful Style Syntax",
+              "correct": false
+            },
+            {
+              "text": "Creative Styling System",
+              "correct": false
+            },
+            {
+              "text": "Computer Style Sheet",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css02",
+          "question": "Which HTML tag is used to define an internal style sheet?",
+          "answers": [
+            {
+              "text": "<css>",
+              "correct": false
+            },
+            {
+              "text": "<style>",
+              "correct": true
+            },
+            {
+              "text": "<script>",
+              "correct": false
+            },
+            {
+              "text": "<design>",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css03",
+          "question": "Which property is used to change the background color?",
+          "answers": [
+            {
+              "text": "color",
+              "correct": false
+            },
+            {
+              "text": "bgcolor",
+              "correct": false
+            },
+            {
+              "text": "background-color",
+              "correct": true
+            },
+            {
+              "text": "background-style",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css04",
+          "question": "Which property controls the text size?",
+          "answers": [
+            {
+              "text": "font-size",
+              "correct": true
+            },
+            {
+              "text": "text-size",
+              "correct": false
+            },
+            {
+              "text": "size",
+              "correct": false
+            },
+            {
+              "text": "font",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css05",
+          "question": "How do you select an element with id 'header'?",
+          "answers": [
+            {
+              "text": ".header",
+              "correct": false
+            },
+            {
+              "text": "#header",
+              "correct": true
+            },
+            {
+              "text": "*header",
+              "correct": false
+            },
+            {
+              "text": "header",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css06",
+          "question": "Which CSS property is used to change text color?",
+          "answers": [
+            {
+              "text": "font-color",
+              "correct": false
+            },
+            {
+              "text": "text-color",
+              "correct": false
+            },
+            {
+              "text": "color",
+              "correct": true
+            },
+            {
+              "text": "foreground",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css07",
+          "question": "How do you make each word in a text start with a capital letter?",
+          "answers": [
+            {
+              "text": "text-style: capitalize;",
+              "correct": false
+            },
+            {
+              "text": "text-transform: capitalize;",
+              "correct": true
+            },
+            {
+              "text": "font-transform: uppercase;",
+              "correct": false
+            },
+            {
+              "text": "text-decoration: capitalize;",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css08",
+          "question": "Which property is used to change the font of an element?",
+          "answers": [
+            {
+              "text": "font-style",
+              "correct": false
+            },
+            {
+              "text": "font-family",
+              "correct": true
+            },
+            {
+              "text": "font-type",
+              "correct": false
+            },
+            {
+              "text": "text-font",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css09",
+          "question": "Which property is used to control the spacing between lines of text?",
+          "answers": [
+            {
+              "text": "line-height",
+              "correct": true
+            },
+            {
+              "text": "letter-spacing",
+              "correct": false
+            },
+            {
+              "text": "text-spacing",
+              "correct": false
+            },
+            {
+              "text": "word-spacing",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css10",
+          "question": "Which property makes an element invisible but still occupies space?",
+          "answers": [
+            {
+              "text": "display: none;",
+              "correct": false
+            },
+            {
+              "text": "visibility: hidden;",
+              "correct": true
+            },
+            {
+              "text": "opacity: 0;",
+              "correct": false
+            },
+            {
+              "text": "hidden: true;",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css11",
+          "question": "Which property is used to add shadow to text?",
+          "answers": [
+            {
+              "text": "box-shadow",
+              "correct": false
+            },
+            {
+              "text": "text-shadow",
+              "correct": true
+            },
+            {
+              "text": "font-shadow",
+              "correct": false
+            },
+            {
+              "text": "word-shadow",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css12",
+          "question": "Which value of position places the element relative to the browser window?",
+          "answers": [
+            {
+              "text": "absolute",
+              "correct": false
+            },
+            {
+              "text": "fixed",
+              "correct": true
+            },
+            {
+              "text": "relative",
+              "correct": false
+            },
+            {
+              "text": "static",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css13",
+          "question": "How do you make text bold in CSS?",
+          "answers": [
+            {
+              "text": "font-style: bold;",
+              "correct": false
+            },
+            {
+              "text": "font-weight: bold;",
+              "correct": true
+            },
+            {
+              "text": "text-bold: true;",
+              "correct": false
+            },
+            {
+              "text": "font: bold;",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css14",
+          "question": "What does the z-index property control?",
+          "answers": [
+            {
+              "text": "Element color",
+              "correct": false
+            },
+            {
+              "text": "Stacking order of elements",
+              "correct": true
+            },
+            {
+              "text": "Zoom level",
+              "correct": false
+            },
+            {
+              "text": "Opacity of elements",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css15",
+          "question": "Which property controls the space between elements' borders?",
+          "answers": [
+            {
+              "text": "margin",
+              "correct": true
+            },
+            {
+              "text": "padding",
+              "correct": false
+            },
+            {
+              "text": "spacing",
+              "correct": false
+            },
+            {
+              "text": "border-gap",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css16",
+          "question": "Which property is used to create rounded corners?",
+          "answers": [
+            {
+              "text": "corner-radius",
+              "correct": false
+            },
+            {
+              "text": "border-radius",
+              "correct": true
+            },
+            {
+              "text": "round-corner",
+              "correct": false
+            },
+            {
+              "text": "radius",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css17",
+          "question": "Which property allows text to wrap inside a container?",
+          "answers": [
+            {
+              "text": "text-overflow",
+              "correct": false
+            },
+            {
+              "text": "word-wrap",
+              "correct": true
+            },
+            {
+              "text": "wrap-text",
+              "correct": false
+            },
+            {
+              "text": "text-wrap",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css18",
+          "question": "Which property defines the transparency of an element?",
+          "answers": [
+            {
+              "text": "opacity",
+              "correct": true
+            },
+            {
+              "text": "visibility",
+              "correct": false
+            },
+            {
+              "text": "display",
+              "correct": false
+            },
+            {
+              "text": "transparency",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css19",
+          "question": "What is the default position value of HTML elements?",
+          "answers": [
+            {
+              "text": "static",
+              "correct": true
+            },
+            {
+              "text": "relative",
+              "correct": false
+            },
+            {
+              "text": "absolute",
+              "correct": false
+            },
+            {
+              "text": "fixed",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_css20",
+          "question": "Which CSS property sets the space between the border and the content?",
+          "answers": [
+            {
+              "text": "padding",
+              "correct": true
+            },
+            {
+              "text": "margin",
+              "correct": false
+            },
+            {
+              "text": "border-spacing",
+              "correct": false
+            },
+            {
+              "text": "gap",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "JavaScript": {
+      "id": "JavaScript",
+      "title": "JavaScript",
+      "icon": "Zap",
+      "description": "Challenge yourself with JavaScript questions covering syntax, data types, functions, and modern ES6+ features that power interactive web applications.",
+      "color": "#F7DF1E",
+      "questions": [
+        {
+          "id": "qz_js01",
+          "question": "What is JavaScript primarily used for in web development?",
+          "answers": [
+            {
+              "text": "To style web pages",
+              "correct": false
+            },
+            {
+              "text": "To structure web pages",
+              "correct": false
+            },
+            {
+              "text": "To make web pages interactive",
+              "correct": true
+            },
+            {
+              "text": "To manage databases",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js02",
+          "question": "Which HTML tag is used to include JavaScript code?",
+          "answers": [
+            {
+              "text": "<script>",
+              "correct": true
+            },
+            {
+              "text": "<javascript>",
+              "correct": false
+            },
+            {
+              "text": "<js>",
+              "correct": false
+            },
+            {
+              "text": "<code>",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js03",
+          "question": "How do you write 'Hello World' in an alert box?",
+          "answers": [
+            {
+              "text": "msg('Hello World');",
+              "correct": false
+            },
+            {
+              "text": "alert('Hello World');",
+              "correct": true
+            },
+            {
+              "text": "prompt('Hello World');",
+              "correct": false
+            },
+            {
+              "text": "console.log('Hello World');",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js04",
+          "question": "Which symbol is used for comments in JavaScript?",
+          "answers": [
+            {
+              "text": "// for single-line and /* */ for multi-line comments",
+              "correct": true
+            },
+            {
+              "text": "#",
+              "correct": false
+            },
+            {
+              "text": "<!-- -->",
+              "correct": false
+            },
+            {
+              "text": "** **",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js05",
+          "question": "Which keyword declares a block-scoped variable?",
+          "answers": [
+            {
+              "text": "var",
+              "correct": false
+            },
+            {
+              "text": "let",
+              "correct": true
+            },
+            {
+              "text": "const",
+              "correct": false
+            },
+            {
+              "text": "define",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js06",
+          "question": "Which operator is used to assign a value to a variable?",
+          "answers": [
+            {
+              "text": "==",
+              "correct": false
+            },
+            {
+              "text": "=",
+              "correct": true
+            },
+            {
+              "text": "===",
+              "correct": false
+            },
+            {
+              "text": ":",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js07",
+          "question": "What is the correct syntax to log a message to the console?",
+          "answers": [
+            {
+              "text": "console.print('message')",
+              "correct": false
+            },
+            {
+              "text": "log.console('message')",
+              "correct": false
+            },
+            {
+              "text": "console.log('message')",
+              "correct": true
+            },
+            {
+              "text": "print.console('message')",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js08",
+          "question": "Which data type is NOT primitive in JavaScript?",
+          "answers": [
+            {
+              "text": "string",
+              "correct": false
+            },
+            {
+              "text": "boolean",
+              "correct": false
+            },
+            {
+              "text": "object",
+              "correct": true
+            },
+            {
+              "text": "number",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js09",
+          "question": "Which method converts JSON data into a JavaScript object?",
+          "answers": [
+            {
+              "text": "JSON.convert()",
+              "correct": false
+            },
+            {
+              "text": "JSON.parse()",
+              "correct": true
+            },
+            {
+              "text": "JSON.stringify()",
+              "correct": false
+            },
+            {
+              "text": "JSON.objectify()",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js10",
+          "question": "What will `typeof null` return in JavaScript?",
+          "answers": [
+            {
+              "text": "object",
+              "correct": true
+            },
+            {
+              "text": "null",
+              "correct": false
+            },
+            {
+              "text": "undefined",
+              "correct": false
+            },
+            {
+              "text": "boolean",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js11",
+          "question": "Which method adds an element to the end of an array?",
+          "answers": [
+            {
+              "text": "push()",
+              "correct": true
+            },
+            {
+              "text": "append()",
+              "correct": false
+            },
+            {
+              "text": "insert()",
+              "correct": false
+            },
+            {
+              "text": "add()",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js12",
+          "question": "How do you write an arrow function in JavaScript?",
+          "answers": [
+            {
+              "text": "function => {}",
+              "correct": false
+            },
+            {
+              "text": "() => {}",
+              "correct": true
+            },
+            {
+              "text": "() -> {}",
+              "correct": false
+            },
+            {
+              "text": "=> {}",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js13",
+          "question": "Which statement stops the execution of a loop?",
+          "answers": [
+            {
+              "text": "exit",
+              "correct": false
+            },
+            {
+              "text": "break",
+              "correct": true
+            },
+            {
+              "text": "stop",
+              "correct": false
+            },
+            {
+              "text": "return",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js14",
+          "question": "What is the result of 3 + '3' in JavaScript?",
+          "answers": [
+            {
+              "text": "6",
+              "correct": false
+            },
+            {
+              "text": "'33'",
+              "correct": true
+            },
+            {
+              "text": "NaN",
+              "correct": false
+            },
+            {
+              "text": "Error",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js15",
+          "question": "Which keyword is used to define a constant in JavaScript?",
+          "answers": [
+            {
+              "text": "let",
+              "correct": false
+            },
+            {
+              "text": "var",
+              "correct": false
+            },
+            {
+              "text": "const",
+              "correct": true
+            },
+            {
+              "text": "static",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js16",
+          "question": "What will `Boolean(0)` return?",
+          "answers": [
+            {
+              "text": "true",
+              "correct": false
+            },
+            {
+              "text": "false",
+              "correct": true
+            },
+            {
+              "text": "undefined",
+              "correct": false
+            },
+            {
+              "text": "null",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js17",
+          "question": "Which symbol is used for strict equality comparison?",
+          "answers": [
+            {
+              "text": "==",
+              "correct": false
+            },
+            {
+              "text": "===",
+              "correct": true
+            },
+            {
+              "text": "!=",
+              "correct": false
+            },
+            {
+              "text": "!==",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js18",
+          "question": "Which method removes the last element from an array?",
+          "answers": [
+            {
+              "text": "pop()",
+              "correct": true
+            },
+            {
+              "text": "shift()",
+              "correct": false
+            },
+            {
+              "text": "splice()",
+              "correct": false
+            },
+            {
+              "text": "remove()",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js19",
+          "question": "What will `console.log(typeof NaN)` print?",
+          "answers": [
+            {
+              "text": "number",
+              "correct": true
+            },
+            {
+              "text": "NaN",
+              "correct": false
+            },
+            {
+              "text": "undefined",
+              "correct": false
+            },
+            {
+              "text": "object",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "qz_js20",
+          "question": "Which built-in method returns the length of a string?",
+          "answers": [
+            {
+              "text": "len()",
+              "correct": false
+            },
+            {
+              "text": "count()",
+              "correct": false
+            },
+            {
+              "text": "length",
+              "correct": true
+            },
+            {
+              "text": "size()",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "React": {
+      "id": "React",
+      "title": "React",
+      "icon": "Layout",
+      "description": "Test your knowledge of React - the popular JavaScript library for building dynamic user interfaces and single-page applications.",
+      "color": "#61DAFB",
+      "questions": [
+        {
+          "id": "rct_1",
+          "question": "What is React primarily used for?",
+          "answers": [
+            {
+              "text": "Building user interfaces",
+              "correct": true
+            },
+            {
+              "text": "Managing databases",
+              "correct": false
+            },
+            {
+              "text": "Styling web pages",
+              "correct": false
+            },
+            {
+              "text": "Server-side scripting",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_2",
+          "question": "Who developed React?",
+          "answers": [
+            {
+              "text": "Google",
+              "correct": false
+            },
+            {
+              "text": "Facebook",
+              "correct": true
+            },
+            {
+              "text": "Microsoft",
+              "correct": false
+            },
+            {
+              "text": "Twitter",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_3",
+          "question": "What is JSX in React?",
+          "answers": [
+            {
+              "text": "A JavaScript XML-like syntax",
+              "correct": true
+            },
+            {
+              "text": "A CSS preprocessor",
+              "correct": false
+            },
+            {
+              "text": "A JSON data format",
+              "correct": false
+            },
+            {
+              "text": "A React component library",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_4",
+          "question": "Which method is used to create a functional component in React?",
+          "answers": [
+            {
+              "text": "Using function or arrow function",
+              "correct": true
+            },
+            {
+              "text": "Using class keyword",
+              "correct": false
+            },
+            {
+              "text": "Using constructor",
+              "correct": false
+            },
+            {
+              "text": "Using new Component()",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_5",
+          "question": "What hook is used to handle state in functional components?",
+          "answers": [
+            {
+              "text": "useState",
+              "correct": true
+            },
+            {
+              "text": "useEffect",
+              "correct": false
+            },
+            {
+              "text": "useReducer",
+              "correct": false
+            },
+            {
+              "text": "useContext",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_6",
+          "question": "What does the useEffect hook do?",
+          "answers": [
+            {
+              "text": "Handles side effects in components",
+              "correct": true
+            },
+            {
+              "text": "Handles state changes",
+              "correct": false
+            },
+            {
+              "text": "Returns JSX elements",
+              "correct": false
+            },
+            {
+              "text": "Creates new components",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_7",
+          "question": "Which of these is true about React components?",
+          "answers": [
+            {
+              "text": "They can be reused across different parts of an app",
+              "correct": true
+            },
+            {
+              "text": "They must always be class-based",
+              "correct": false
+            },
+            {
+              "text": "They cannot accept props",
+              "correct": false
+            },
+            {
+              "text": "They cannot have children",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_8",
+          "question": "What is the purpose of props in React?",
+          "answers": [
+            {
+              "text": "To pass data from parent to child components",
+              "correct": true
+            },
+            {
+              "text": "To store local state",
+              "correct": false
+            },
+            {
+              "text": "To manage global variables",
+              "correct": false
+            },
+            {
+              "text": "To define routes",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_9",
+          "question": "What is the virtual DOM in React?",
+          "answers": [
+            {
+              "text": "A lightweight copy of the real DOM used for efficient updates",
+              "correct": true
+            },
+            {
+              "text": "A browser API for rendering HTML",
+              "correct": false
+            },
+            {
+              "text": "A JSON representation of HTML",
+              "correct": false
+            },
+            {
+              "text": "A debugging tool",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_10",
+          "question": "What is the default port for React development server?",
+          "answers": [
+            {
+              "text": "3000",
+              "correct": true
+            },
+            {
+              "text": "8080",
+              "correct": false
+            },
+            {
+              "text": "5000",
+              "correct": false
+            },
+            {
+              "text": "4200",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_11",
+          "question": "What does lifting state up mean in React?",
+          "answers": [
+            {
+              "text": "Moving shared state to a common ancestor component",
+              "correct": true
+            },
+            {
+              "text": "Passing props down from parent to child",
+              "correct": false
+            },
+            {
+              "text": "Using useContext instead of props",
+              "correct": false
+            },
+            {
+              "text": "Storing data in Redux",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_12",
+          "question": "What is React Router used for?",
+          "answers": [
+            {
+              "text": "Handling navigation in React apps",
+              "correct": true
+            },
+            {
+              "text": "Managing component states",
+              "correct": false
+            },
+            {
+              "text": "Styling components",
+              "correct": false
+            },
+            {
+              "text": "Handling API requests",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_13",
+          "question": "Which hook is used to access context in React?",
+          "answers": [
+            {
+              "text": "useContext",
+              "correct": true
+            },
+            {
+              "text": "useRef",
+              "correct": false
+            },
+            {
+              "text": "useMemo",
+              "correct": false
+            },
+            {
+              "text": "useCallback",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_14",
+          "question": "What is the purpose of keys in React lists?",
+          "answers": [
+            {
+              "text": "To help React identify which items have changed",
+              "correct": true
+            },
+            {
+              "text": "To make elements draggable",
+              "correct": false
+            },
+            {
+              "text": "To add security to components",
+              "correct": false
+            },
+            {
+              "text": "To define event handlers",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_15",
+          "question": "What does useRef return?",
+          "answers": [
+            {
+              "text": "A mutable ref object with a .current property",
+              "correct": true
+            },
+            {
+              "text": "A function to manage state",
+              "correct": false
+            },
+            {
+              "text": "A memoized value",
+              "correct": false
+            },
+            {
+              "text": "An event handler",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_16",
+          "question": "What is React.StrictMode used for?",
+          "answers": [
+            {
+              "text": "To highlight potential problems in an app",
+              "correct": true
+            },
+            {
+              "text": "To enable production mode",
+              "correct": false
+            },
+            {
+              "text": "To handle errors gracefully",
+              "correct": false
+            },
+            {
+              "text": "To optimize bundle size",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_17",
+          "question": "Which function is used to create context in React?",
+          "answers": [
+            {
+              "text": "createContext()",
+              "correct": true
+            },
+            {
+              "text": "useContext()",
+              "correct": false
+            },
+            {
+              "text": "useProvider()",
+              "correct": false
+            },
+            {
+              "text": "createState()",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_18",
+          "question": "What command is used to create a new React app using Create React App?",
+          "answers": [
+            {
+              "text": "npx create-react-app appname",
+              "correct": true
+            },
+            {
+              "text": "npm init react-app appname",
+              "correct": false
+            },
+            {
+              "text": "npm create react-app appname",
+              "correct": false
+            },
+            {
+              "text": "npx new react-app appname",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_19",
+          "question": "What is the purpose of useMemo hook?",
+          "answers": [
+            {
+              "text": "To memoize expensive computations",
+              "correct": true
+            },
+            {
+              "text": "To fetch API data",
+              "correct": false
+            },
+            {
+              "text": "To store previous props",
+              "correct": false
+            },
+            {
+              "text": "To handle routing",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rct_20",
+          "question": "Which library is often used with React for state management?",
+          "answers": [
+            {
+              "text": "Redux",
+              "correct": true
+            },
+            {
+              "text": "Bootstrap",
+              "correct": false
+            },
+            {
+              "text": "Express",
+              "correct": false
+            },
+            {
+              "text": "Axios",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "Node.js": {
+      "id": "Node.js",
+      "title": "Node.js",
+      "icon": "Terminal",
+      "description": "Dive into server-side JavaScript with Node.js - learn about modules, asynchronous programming, and building scalable backend applications.",
+      "color": "#339933",
+      "questions": [
+        {
+          "id": "nd_1a92",
+          "question": "What is Node.js primarily used for?",
+          "answers": [
+            {
+              "text": "Building mobile apps",
+              "correct": false
+            },
+            {
+              "text": "Server-side scripting",
+              "correct": true
+            },
+            {
+              "text": "Designing databases",
+              "correct": false
+            },
+            {
+              "text": "Creating spreadsheets",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "nd_3f47",
+          "question": "Which of the following is true about Node.js?",
+          "answers": [
+            {
+              "text": "It runs in the browser",
+              "correct": false
+            },
+            {
+              "text": "It uses the V8 JavaScript engine",
+              "correct": true
+            },
+            {
+              "text": "It's built on Java",
+              "correct": false
+            },
+            {
+              "text": "It doesn't support asynchronous programming",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "nd_4b88",
+          "question": "Which command is used to initialize a new Node.js project?",
+          "answers": [
+            {
+              "text": "npm start",
+              "correct": false
+            },
+            {
+              "text": "npm init",
+              "correct": true
+            },
+            {
+              "text": "node create",
+              "correct": false
+            },
+            {
+              "text": "node init",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "nd_2e65",
+          "question": "What file is used to define dependencies in a Node.js project?",
+          "answers": [
+            {
+              "text": "dependencies.json",
+              "correct": false
+            },
+            {
+              "text": "node_modules.json",
+              "correct": false
+            },
+            {
+              "text": "package.json",
+              "correct": true
+            },
+            {
+              "text": "app.config",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "nd_9f13",
+          "question": "Which module is built-in for handling file operations?",
+          "answers": [
+            {
+              "text": "path",
+              "correct": false
+            },
+            {
+              "text": "fs",
+              "correct": true
+            },
+            {
+              "text": "http",
+              "correct": false
+            },
+            {
+              "text": "os",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "nd_7b51",
+          "question": "How do you import a built-in module in Node.js?",
+          "answers": [
+            {
+              "text": "import fs from 'fs'",
+              "correct": false
+            },
+            {
+              "text": "require('fs')",
+              "correct": true
+            },
+            {
+              "text": "include('fs')",
+              "correct": false
+            },
+            {
+              "text": "load('fs')",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "nd_5a22",
+          "question": "Which of the following frameworks is built on top of Node.js?",
+          "answers": [
+            {
+              "text": "Express.js",
+              "correct": true
+            },
+            {
+              "text": "Django",
+              "correct": false
+            },
+            {
+              "text": "Flask",
+              "correct": false
+            },
+            {
+              "text": "Spring",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "nd_1d90",
+          "question": "What does the 'npm' command stand for?",
+          "answers": [
+            {
+              "text": "Node Package Manager",
+              "correct": true
+            },
+            {
+              "text": "New Project Maker",
+              "correct": false
+            },
+            {
+              "text": "Node Process Manager",
+              "correct": false
+            },
+            {
+              "text": "Network Package Manager",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "nd_6c32",
+          "question": "How do you start a Node.js application?",
+          "answers": [
+            {
+              "text": "node app.js",
+              "correct": true
+            },
+            {
+              "text": "npm app.js",
+              "correct": false
+            },
+            {
+              "text": "start app.js",
+              "correct": false
+            },
+            {
+              "text": "run app.js",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "nd_0d74",
+          "question": "Which of the following is NOT a core module in Node.js?",
+          "answers": [
+            {
+              "text": "fs",
+              "correct": false
+            },
+            {
+              "text": "http",
+              "correct": false
+            },
+            {
+              "text": "events",
+              "correct": false
+            },
+            {
+              "text": "axios",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": "nd_8b77",
+          "question": "Which event is emitted when a stream ends in Node.js?",
+          "answers": [
+            {
+              "text": "finish",
+              "correct": false
+            },
+            {
+              "text": "end",
+              "correct": true
+            },
+            {
+              "text": "close",
+              "correct": false
+            },
+            {
+              "text": "data",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "nd_9e11",
+          "question": "What is the default scope of variables in Node.js modules?",
+          "answers": [
+            {
+              "text": "Global",
+              "correct": false
+            },
+            {
+              "text": "Local to the module",
+              "correct": true
+            },
+            {
+              "text": "Block-level",
+              "correct": false
+            },
+            {
+              "text": "Function-level",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "nd_2c64",
+          "question": "Which method is used to read a file asynchronously?",
+          "answers": [
+            {
+              "text": "fs.readFile()",
+              "correct": true
+            },
+            {
+              "text": "fs.read()",
+              "correct": false
+            },
+            {
+              "text": "fs.loadFile()",
+              "correct": false
+            },
+            {
+              "text": "fs.getFile()",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "nd_7d42",
+          "question": "Which object is used to handle events in Node.js?",
+          "answers": [
+            {
+              "text": "EventEmitter",
+              "correct": true
+            },
+            {
+              "text": "EventHandler",
+              "correct": false
+            },
+            {
+              "text": "EventBus",
+              "correct": false
+            },
+            {
+              "text": "EventStream",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "nd_5f10",
+          "question": "What is the purpose of the 'require' function?",
+          "answers": [
+            {
+              "text": "To import modules",
+              "correct": true
+            },
+            {
+              "text": "To export modules",
+              "correct": false
+            },
+            {
+              "text": "To compile scripts",
+              "correct": false
+            },
+            {
+              "text": "To initialize the app",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "nd_6b41",
+          "question": "Which keyword is used to export a module in Node.js?",
+          "answers": [
+            {
+              "text": "export",
+              "correct": false
+            },
+            {
+              "text": "exports",
+              "correct": true
+            },
+            {
+              "text": "moduleExport",
+              "correct": false
+            },
+            {
+              "text": "send",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "nd_3e55",
+          "question": "What does 'process' represent in Node.js?",
+          "answers": [
+            {
+              "text": "A background service",
+              "correct": false
+            },
+            {
+              "text": "The current Node.js process",
+              "correct": true
+            },
+            {
+              "text": "A web server",
+              "correct": false
+            },
+            {
+              "text": "A database connection",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "nd_8c99",
+          "question": "Which method stops the Node.js process?",
+          "answers": [
+            {
+              "text": "process.exit()",
+              "correct": true
+            },
+            {
+              "text": "process.stop()",
+              "correct": false
+            },
+            {
+              "text": "process.kill()",
+              "correct": false
+            },
+            {
+              "text": "process.end()",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "nd_0b28",
+          "question": "Which of these can handle HTTP requests in Node.js?",
+          "answers": [
+            {
+              "text": "fs",
+              "correct": false
+            },
+            {
+              "text": "http",
+              "correct": true
+            },
+            {
+              "text": "os",
+              "correct": false
+            },
+            {
+              "text": "path",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "nd_4c80",
+          "question": "What does 'callback' refer to in Node.js?",
+          "answers": [
+            {
+              "text": "A variable",
+              "correct": false
+            },
+            {
+              "text": "A function executed after another finishes",
+              "correct": true
+            },
+            {
+              "text": "A module",
+              "correct": false
+            },
+            {
+              "text": "A thread",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "Rust": {
+      "id": "Rust",
+      "title": "Rust",
+      "icon": "Code2",
+      "description": "Explore Rust programming - a systems language focused on safety, speed, and concurrency without garbage collection.",
+      "color": "#CE412B",
+      "questions": [
+        {
+          "id": "rst_1",
+          "question": "What is Rust primarily known for?",
+          "answers": [
+            {
+              "text": "Memory safety without a garbage collector",
+              "correct": true
+            },
+            {
+              "text": "Dynamic typing",
+              "correct": false
+            },
+            {
+              "text": "Being interpreted",
+              "correct": false
+            },
+            {
+              "text": "Automatic memory management",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_2",
+          "question": "Who developed Rust?",
+          "answers": [
+            {
+              "text": "Mozilla",
+              "correct": true
+            },
+            {
+              "text": "Microsoft",
+              "correct": false
+            },
+            {
+              "text": "Google",
+              "correct": false
+            },
+            {
+              "text": "Amazon",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_3",
+          "question": "What is Cargo in Rust?",
+          "answers": [
+            {
+              "text": "Rust's build system and package manager",
+              "correct": true
+            },
+            {
+              "text": "A type of struct",
+              "correct": false
+            },
+            {
+              "text": "A compiler",
+              "correct": false
+            },
+            {
+              "text": "A debugging tool",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_4",
+          "question": "What command creates a new Rust project?",
+          "answers": [
+            {
+              "text": "cargo new project_name",
+              "correct": true
+            },
+            {
+              "text": "rustc new project_name",
+              "correct": false
+            },
+            {
+              "text": "cargo create project_name",
+              "correct": false
+            },
+            {
+              "text": "rust new project_name",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_5",
+          "question": "Which file defines Rust project metadata and dependencies?",
+          "answers": [
+            {
+              "text": "Cargo.toml",
+              "correct": true
+            },
+            {
+              "text": "main.rs",
+              "correct": false
+            },
+            {
+              "text": "Cargo.lock",
+              "correct": false
+            },
+            {
+              "text": "rust.toml",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_6",
+          "question": "What keyword is used to define a variable in Rust?",
+          "answers": [
+            {
+              "text": "let",
+              "correct": true
+            },
+            {
+              "text": "var",
+              "correct": false
+            },
+            {
+              "text": "mut",
+              "correct": false
+            },
+            {
+              "text": "const",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_7",
+          "question": "What does 'mut' mean when used with a variable?",
+          "answers": [
+            {
+              "text": "The variable is mutable",
+              "correct": true
+            },
+            {
+              "text": "The variable is immutable",
+              "correct": false
+            },
+            {
+              "text": "The variable is static",
+              "correct": false
+            },
+            {
+              "text": "The variable is borrowed",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_8",
+          "question": "What does the 'ownership' concept ensure in Rust?",
+          "answers": [
+            {
+              "text": "Memory is managed safely without garbage collection",
+              "correct": true
+            },
+            {
+              "text": "Multiple variables can own the same data",
+              "correct": false
+            },
+            {
+              "text": "Memory leaks are allowed",
+              "correct": false
+            },
+            {
+              "text": "Rust uses reference counting by default",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_9",
+          "question": "What happens when a variable goes out of scope in Rust?",
+          "answers": [
+            {
+              "text": "Its memory is automatically freed",
+              "correct": true
+            },
+            {
+              "text": "It is sent to the garbage collector",
+              "correct": false
+            },
+            {
+              "text": "It persists in memory",
+              "correct": false
+            },
+            {
+              "text": "It triggers a compile-time error",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_10",
+          "question": "Which keyword is used to define a function in Rust?",
+          "answers": [
+            {
+              "text": "fn",
+              "correct": true
+            },
+            {
+              "text": "func",
+              "correct": false
+            },
+            {
+              "text": "def",
+              "correct": false
+            },
+            {
+              "text": "function",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_11",
+          "question": "What symbol is used to indicate a reference in Rust?",
+          "answers": [
+            {
+              "text": "&",
+              "correct": true
+            },
+            {
+              "text": "*",
+              "correct": false
+            },
+            {
+              "text": "#",
+              "correct": false
+            },
+            {
+              "text": "$",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_12",
+          "question": "What is a 'trait' in Rust?",
+          "answers": [
+            {
+              "text": "A collection of methods that can be implemented by types",
+              "correct": true
+            },
+            {
+              "text": "A type of variable",
+              "correct": false
+            },
+            {
+              "text": "A module",
+              "correct": false
+            },
+            {
+              "text": "A pointer to memory",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_13",
+          "question": "What keyword is used to define a constant in Rust?",
+          "answers": [
+            {
+              "text": "const",
+              "correct": true
+            },
+            {
+              "text": "static",
+              "correct": false
+            },
+            {
+              "text": "let",
+              "correct": false
+            },
+            {
+              "text": "define",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_14",
+          "question": "What is the output type of the 'main' function in most Rust programs?",
+          "answers": [
+            {
+              "text": "()",
+              "correct": true
+            },
+            {
+              "text": "void",
+              "correct": false
+            },
+            {
+              "text": "int",
+              "correct": false
+            },
+            {
+              "text": "None",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_15",
+          "question": "Which keyword is used to import modules or traits in Rust?",
+          "answers": [
+            {
+              "text": "use",
+              "correct": true
+            },
+            {
+              "text": "import",
+              "correct": false
+            },
+            {
+              "text": "include",
+              "correct": false
+            },
+            {
+              "text": "require",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_16",
+          "question": "What is pattern matching in Rust primarily done with?",
+          "answers": [
+            {
+              "text": "match keyword",
+              "correct": true
+            },
+            {
+              "text": "switch statement",
+              "correct": false
+            },
+            {
+              "text": "if-else ladder",
+              "correct": false
+            },
+            {
+              "text": "loop pattern",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_17",
+          "question": "Which of the following is NOT a valid data type in Rust?",
+          "answers": [
+            {
+              "text": "string",
+              "correct": true
+            },
+            {
+              "text": "i32",
+              "correct": false
+            },
+            {
+              "text": "f64",
+              "correct": false
+            },
+            {
+              "text": "bool",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_18",
+          "question": "Which macro is commonly used to print output in Rust?",
+          "answers": [
+            {
+              "text": "println!",
+              "correct": true
+            },
+            {
+              "text": "print()",
+              "correct": false
+            },
+            {
+              "text": "echo!",
+              "correct": false
+            },
+            {
+              "text": "log()",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_19",
+          "question": "What is a 'crate' in Rust?",
+          "answers": [
+            {
+              "text": "A package of Rust code",
+              "correct": true
+            },
+            {
+              "text": "A struct",
+              "correct": false
+            },
+            {
+              "text": "A function",
+              "correct": false
+            },
+            {
+              "text": "A compiler directive",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "rst_20",
+          "question": "What does 'unwrap()' do when used on a Result type?",
+          "answers": [
+            {
+              "text": "Returns the value if Ok, panics if Err",
+              "correct": true
+            },
+            {
+              "text": "Ignores errors silently",
+              "correct": false
+            },
+            {
+              "text": "Converts to an Option type",
+              "correct": false
+            },
+            {
+              "text": "Retries the operation",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    "Python": {
+      "id": "Python",
+      "title": "Python",
+      "icon": "Code2",
+      "description": "Challenge your Python skills - from basic syntax and data structures to object-oriented programming and built-in functions.",
+      "color": "#3776AB",
+      "questions": [
+        {
+          "id": "py_1",
+          "question": "Who developed the Python programming language?",
+          "answers": [
+            {
+              "text": "Guido van Rossum",
+              "correct": true
+            },
+            {
+              "text": "James Gosling",
+              "correct": false
+            },
+            {
+              "text": "Dennis Ritchie",
+              "correct": false
+            },
+            {
+              "text": "Bjarne Stroustrup",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_2",
+          "question": "What type of language is Python?",
+          "answers": [
+            {
+              "text": "Interpreted",
+              "correct": true
+            },
+            {
+              "text": "Compiled",
+              "correct": false
+            },
+            {
+              "text": "Assembly",
+              "correct": false
+            },
+            {
+              "text": "Machine",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_3",
+          "question": "What symbol is used to comment a single line in Python?",
+          "answers": [
+            {
+              "text": "#",
+              "correct": true
+            },
+            {
+              "text": "//",
+              "correct": false
+            },
+            {
+              "text": "/* */",
+              "correct": false
+            },
+            {
+              "text": "--",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_4",
+          "question": "Which of the following is a valid variable name in Python?",
+          "answers": [
+            {
+              "text": "_value",
+              "correct": true
+            },
+            {
+              "text": "9value",
+              "correct": false
+            },
+            {
+              "text": "value-name",
+              "correct": false
+            },
+            {
+              "text": "value name",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_5",
+          "question": "Which function is used to get user input in Python 3?",
+          "answers": [
+            {
+              "text": "input()",
+              "correct": true
+            },
+            {
+              "text": "raw_input()",
+              "correct": false
+            },
+            {
+              "text": "scanf()",
+              "correct": false
+            },
+            {
+              "text": "get()",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_6",
+          "question": "What data type is the object below?\nL = [1, 2, 3]",
+          "answers": [
+            {
+              "text": "List",
+              "correct": true
+            },
+            {
+              "text": "Tuple",
+              "correct": false
+            },
+            {
+              "text": "Dictionary",
+              "correct": false
+            },
+            {
+              "text": "Set",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_7",
+          "question": "What will be the output of: print(type({}))?",
+          "answers": [
+            {
+              "text": "<class 'dict'>",
+              "correct": true
+            },
+            {
+              "text": "<class 'set'>",
+              "correct": false
+            },
+            {
+              "text": "<class 'tuple'>",
+              "correct": false
+            },
+            {
+              "text": "<class 'list'>",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_8",
+          "question": "Which of these is a mutable data type?",
+          "answers": [
+            {
+              "text": "List",
+              "correct": true
+            },
+            {
+              "text": "Tuple",
+              "correct": false
+            },
+            {
+              "text": "String",
+              "correct": false
+            },
+            {
+              "text": "Frozen set",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_9",
+          "question": "What keyword is used to define a function in Python?",
+          "answers": [
+            {
+              "text": "def",
+              "correct": true
+            },
+            {
+              "text": "func",
+              "correct": false
+            },
+            {
+              "text": "function",
+              "correct": false
+            },
+            {
+              "text": "define",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_10",
+          "question": "Which statement is used to stop a loop?",
+          "answers": [
+            {
+              "text": "break",
+              "correct": true
+            },
+            {
+              "text": "stop",
+              "correct": false
+            },
+            {
+              "text": "exit",
+              "correct": false
+            },
+            {
+              "text": "continue",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_11",
+          "question": "Which method is used to add an element to a list?",
+          "answers": [
+            {
+              "text": "append()",
+              "correct": true
+            },
+            {
+              "text": "add()",
+              "correct": false
+            },
+            {
+              "text": "insert()",
+              "correct": false
+            },
+            {
+              "text": "push()",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_12",
+          "question": "What is the output of len('Python')?",
+          "answers": [
+            {
+              "text": "6",
+              "correct": true
+            },
+            {
+              "text": "5",
+              "correct": false
+            },
+            {
+              "text": "7",
+              "correct": false
+            },
+            {
+              "text": "Error",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_13",
+          "question": "Which of these keywords is used to handle exceptions?",
+          "answers": [
+            {
+              "text": "try",
+              "correct": true
+            },
+            {
+              "text": "throw",
+              "correct": false
+            },
+            {
+              "text": "catch",
+              "correct": false
+            },
+            {
+              "text": "handle",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_14",
+          "question": "How do you start a comment block in Python?",
+          "answers": [
+            {
+              "text": "''' Comment '''",
+              "correct": true
+            },
+            {
+              "text": "// Comment //",
+              "correct": false
+            },
+            {
+              "text": "/* Comment */",
+              "correct": false
+            },
+            {
+              "text": "-- Comment --",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_15",
+          "question": "What is the output of 2 ** 3 in Python?",
+          "answers": [
+            {
+              "text": "8",
+              "correct": true
+            },
+            {
+              "text": "6",
+              "correct": false
+            },
+            {
+              "text": "9",
+              "correct": false
+            },
+            {
+              "text": "5",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_16",
+          "question": "Which of these is a Python tuple?",
+          "answers": [
+            {
+              "text": "(1, 2, 3)",
+              "correct": true
+            },
+            {
+              "text": "[1, 2, 3]",
+              "correct": false
+            },
+            {
+              "text": "{1, 2, 3}",
+              "correct": false
+            },
+            {
+              "text": "\"1, 2, 3\"",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_17",
+          "question": "What keyword is used to define a class in Python?",
+          "answers": [
+            {
+              "text": "class",
+              "correct": true
+            },
+            {
+              "text": "object",
+              "correct": false
+            },
+            {
+              "text": "def",
+              "correct": false
+            },
+            {
+              "text": "struct",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_18",
+          "question": "Which operator is used for floor division in Python?",
+          "answers": [
+            {
+              "text": "//",
+              "correct": true
+            },
+            {
+              "text": "/",
+              "correct": false
+            },
+            {
+              "text": "%",
+              "correct": false
+            },
+            {
+              "text": "**",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_19",
+          "question": "Which built-in function returns the absolute value of a number?",
+          "answers": [
+            {
+              "text": "abs()",
+              "correct": true
+            },
+            {
+              "text": "fabs()",
+              "correct": false
+            },
+            {
+              "text": "absolute()",
+              "correct": false
+            },
+            {
+              "text": "math.abs()",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": "py_20",
+          "question": "What will be the output of bool(0)?",
+          "answers": [
+            {
+              "text": "False",
+              "correct": true
+            },
+            {
+              "text": "True",
+              "correct": false
+            },
+            {
+              "text": "0",
+              "correct": false
+            },
+            {
+              "text": "None",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
