@@ -1,58 +1,47 @@
 // src/pages/Settings.tsx
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
-// 🚨 Clock is the new icon
 import { Bell, Globe, Shield, Trash2, LogOut, User, Volume2, Save, Clock } from "lucide-react"; 
 import { useAuth } from "../../Routes/Route";
 import type { DataType } from "../Auth/lib/type";
 import USERS from "../../../Server/db.json";
 
-
 const Settings = () => {
   const { logout } = useAuth();
   const navigate = useNavigate();
   
-  // State for user data (using the imported UserType)
   const [currentUser, setCurrentUser] = useState<DataType | null>(null);
   const [displayName, setDisplayName] = useState('');
   const [isEditingName, setIsEditingName] = useState(false);
   
-  // State for persistent settings
   const [notifications, setNotifications] = useState(true);
-  // 🚨 REPLACED: darkMode -> timerVisible (Default true)
   const [timerVisible, setTimerVisible] = useState(true); 
   const [sound, setSound] = useState(true);
   
   const [isLoading, setIsLoading] = useState(true);
 
-  // Load User Data and Settings on Mount
   useEffect(() => {
     const userId = localStorage.getItem("currentUserId");
     if (!userId) {
-      console.log("DEBUG: No currentUserId found. Navigating to login.");
       navigate("/login");
       return;
     }
 
-    // 1. Load User Data from JSON
     const foundUser = USERS.users.find((user: DataType) => user.id === userId);
     if (foundUser) {
       setCurrentUser(foundUser);
       setDisplayName(foundUser.name ?? '');
     } else {
-      console.error("DEBUG: User not found in database for ID:", userId);
       localStorage.removeItem("currentUserId");
       navigate("/login"); 
       return;
     }
 
-    // 2. Load Persistent Settings from localStorage
     const savedSettings = localStorage.getItem(`settings_${userId}`);
     if (savedSettings) {
       try {
         const settings = JSON.parse(savedSettings);
         setNotifications(settings.notifications ?? true);
-        // 🚨 REPLACED: setDarkMode -> setTimerVisible
         setTimerVisible(settings.timerVisible ?? true); 
         setSound(settings.sound ?? true);
       } catch (e) {
@@ -63,19 +52,16 @@ const Settings = () => {
     setIsLoading(false);
   }, [navigate]);
 
-  // Save Settings on Change (for persistence)
   useEffect(() => {
     if (currentUser) {
       const settingsToSave = {
         notifications,
-        // 🚨 REPLACED: darkMode -> timerVisible
         timerVisible, 
         sound,
       };
       localStorage.setItem(`settings_${currentUser.id}`, JSON.stringify(settingsToSave));
     }
-  }, [notifications, timerVisible, sound, currentUser]); // 🚨 REPLACED: darkMode -> timerVisible
-
+  }, [notifications, timerVisible, sound, currentUser]);
 
   const handleLogout = () => {
     logout();
@@ -98,25 +84,23 @@ const Settings = () => {
     }
   };
 
-
-  // IMPROVED LOADING STATE
   if (isLoading || !currentUser) {
     return (
       <main className="min-h-screen flex flex-col items-center justify-center bg-gray-900">
         <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-500 mb-4"></div>
-        <p className="text-white text-xl">Loading user data... (Check Console for errors)</p>
+        <p className="text-white text-xl">Loading user data...</p>
       </main>
     );
   }
 
-
   return (
     <main className="min-h-screen pb-20 bg-[url('/Backdrop.jpg')] bg-center bg-cover bg-no-repeat overflow-x-hidden">
-      <div className="max-w-4xl mx-auto px-4 pt-10">
-        <h1 className="text-5xl font-bold text-white text-center mb-12">Settings ⚙️</h1>
+      {/* Only added pt-24 + px-4 for mobile safety */}
+      <div className="max-w-4xl mx-auto px-4 pt-24">
+        <h1 className="text-5xl font-bold text-white text-center mb-12">Settings</h1>
 
         <div className="space-y-6">
-          {/* Account Section - (Content remains the same) */}
+          {/* Account Section */}
           <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
             <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
               <User className="w-7 h-7" />
@@ -124,7 +108,7 @@ const Settings = () => {
             </h2>
             <div className="space-y-4">
               {/* Change Username */}
-              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-3 rounded-lg border border-white/10">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-3 rounded-lg border border-white/10 gap-4">
                 <div className="mb-2 sm:mb-0">
                   <p className="text-white font-medium">Username</p>
                   <p className="text-gray-300 text-sm">Update your display name</p>
@@ -152,7 +136,7 @@ const Settings = () => {
                         </button>
                     </div>
                 ) : (
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-start">
                         <span className="text-white font-semibold">{displayName}</span>
                         <button 
                             onClick={() => setIsEditingName(true)}
@@ -165,12 +149,12 @@ const Settings = () => {
               </div>
               
               {/* Email Address */}
-              <div className="flex items-center justify-between p-3 rounded-lg border border-white/10">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-3 rounded-lg border border-white/10 gap-4">
                 <div>
                   <p className="text-white font-medium">Email Address</p>
                   <p className="text-gray-300 text-sm">Used for login & notifications</p>
                 </div>
-                <span className="text-gray-300 font-mono">{currentUser.email}</span>
+                <span className="text-gray-300 font-mono break-all text-right sm:text-left">{currentUser.email}</span>
               </div>
             </div>
           </div>
@@ -183,7 +167,6 @@ const Settings = () => {
             </h2>
             <div className="space-y-5">
               
-              {/* Push Notifications */}
               <label className="flex items-center justify-between cursor-pointer">
                 <div className="flex items-center gap-4">
                   <Bell className="w-6 h-6 text-blue-400" />
@@ -200,7 +183,6 @@ const Settings = () => {
                 />
               </label>
               
-              {/* Sound Effects */}
               <label className="flex items-center justify-between cursor-pointer">
                 <div className="flex items-center gap-4">
                   <Volume2 className="w-6 h-6 text-green-400" />
@@ -217,7 +199,6 @@ const Settings = () => {
                 />
               </label>
 
-              {/* 🚨 REPLACEMENT: Quiz Timer Visibility */}
               <label className="flex items-center justify-between cursor-pointer">
                 <div className="flex items-center gap-4">
                   <Clock className="w-6 h-6 text-indigo-400" /> 
@@ -244,11 +225,11 @@ const Settings = () => {
             </h2>
             <button
               onClick={handleClearData}
-              className="w-full flex items-center justify-between p-4 bg-red-500/20 border border-red-500/50 rounded-xl hover:bg-red-500/30 transition"
+              className="w-full flex items-center justify-between p-4 bg-red-500/20 border border-red-500/50 rounded-xl hover:bg-red-500/30 transition text-left"
             >
               <div className="flex items-center gap-4">
                 <Trash2 className="w-6 h-6 text-red-400" />
-                <div className="text-left">
+                <div>
                   <p className="text-white font-medium">Clear Quiz History</p>
                   <p className="text-gray-300 text-sm">Remove all saved results permanently</p>
                 </div>

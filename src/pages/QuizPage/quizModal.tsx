@@ -1,14 +1,10 @@
 // src/components/QuizPage/QuizModal.tsx
 import { useState, useEffect, useCallback } from "react";
 import quizData from "../../../Server/db.json";
-import type { QuizResult, QuizType } from "./libs/Types";
+import type { QuizModalProps, QuizResult } from "./libs/Types";
 import { generateAnswerWithGemini } from "../../libs/gemini";
 
-interface QuizModalProps {
-  quizType: QuizType;
-  isOpen: boolean;
-  onClose: () => void;
-}
+
 
 const QUIZ_DURATION_SECONDS = 300;
 
@@ -25,7 +21,6 @@ function QuizModal({ quizType, isOpen, onClose }: QuizModalProps) {
 
   if (!isOpen) return null;
 
-  // Safe access with type assertion
   const quiz = (quizData as any).quizzes[quizType] as {
     title: string;
     description: string;
@@ -36,23 +31,13 @@ function QuizModal({ quizType, isOpen, onClose }: QuizModalProps) {
   };
 
   if (!quiz || !quiz.questions) {
-    return (
-      <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-        <div className="bg-white p-8 rounded-xl text-center">
-          <p className="text-xl text-red-600">Quiz not found!</p>
-          <button onClick={onClose} className="mt-4 px-6 py-2 bg-gray-600 text-white rounded-lg">
-            Close
-          </button>
-        </div>
-      </div>
-    );
+    return null;
   }
 
   const questions = quiz.questions;
   const totalQuestions = questions.length;
   const currentQuestion = questions[current];
 
-  // Timer
   useEffect(() => {
     if (!showResults && timeLeft > 0) {
       const id = setInterval(() => setTimeLeft(t => t - 1), 1000);
@@ -64,19 +49,13 @@ function QuizModal({ quizType, isOpen, onClose }: QuizModalProps) {
     }
   }, [timeLeft, showResults]);
 
-  // Gemini AI Solver
   const solveWithGemini = async () => {
     if (isLoadingGemini || selectedAnswer) return;
     setIsLoadingGemini(true);
-
     const options = currentQuestion.answers.map(a => a.text);
     const geminiAnswer = await generateAnswerWithGemini(currentQuestion.question, options);
-
-    if (geminiAnswer) {
-      handleAnswerSelect(geminiAnswer);
-    } else {
-      alert("Gemini couldn't solve this one");
-    }
+    if (geminiAnswer) handleAnswerSelect(geminiAnswer);
+    else alert("Gemini couldn't solve this one");
     setIsLoadingGemini(false);
   };
 
@@ -88,6 +67,7 @@ function QuizModal({ quizType, isOpen, onClose }: QuizModalProps) {
   const handleNext = () => {
     if (current < totalQuestions - 1) {
       setCurrent(current + 1);
+      setSelectedAnswer(null);
     } else {
       finishQuiz();
     }
@@ -109,7 +89,6 @@ function QuizModal({ quizType, isOpen, onClose }: QuizModalProps) {
     });
 
     const percent = totalQuestions > 0 ? Math.round((correct / totalQuestions) * 100) : 0;
-
     const timeTakenSeconds = Math.floor((Date.now() - startTime) / 1000);
     const mins = Math.floor(timeTakenSeconds / 60);
     const secs = timeTakenSeconds % 60;
@@ -155,11 +134,11 @@ function QuizModal({ quizType, isOpen, onClose }: QuizModalProps) {
     return `${m}:${s.toString().padStart(2, "0")}`;
   };
 
-  // RESULTS SCREEN - YOUR ORIGINAL BEAUTIFUL STYLE
+  // RESULTS SCREEN — Your original style
   if (showResults) {
     return (
-      <div className="fixed top-12 inset-0 flex items-center justify-center z-50 p-4">
-        <div className="bg-white p-6 rounded-xl shadow max-w-md w-full text-center">
+      <div className="min-h-screen pt-14 px-4 pb-32 backdrop-blur-sm flex items-center justify-center">
+        <div className="bg-white p-6 rounded-xl shadow max-w-md w-full text-center relative">
           <button onClick={onClose} className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl">
             ×
           </button>
@@ -195,10 +174,10 @@ function QuizModal({ quizType, isOpen, onClose }: QuizModalProps) {
     );
   }
 
-  // MAIN QUIZ SCREEN - YOUR ORIGINAL DESIGN
+  // MAIN QUIZ SCREEN — Your exact original UI, now perfectly positioned
   return (
-    <div className="fixed top-12 inset-0 flex items-center justify-center z-50 p-4">
-      <div className="bg-white p-6 rounded-xl shadow max-w-5xl w-full max-h-[90vh] overflow-y-auto relative mt-18">
+    <div className="min-h-screen pt-14 px-4 pb-32  backdrop-blur-sm flex items-start justify-center">
+      <div className="bg-white p-6 rounded-xl shadow max-w-5xl w-full max-h-[90vh] overflow-y-auto relative mt-4">
         <button onClick={onClose} className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl">
           ×
         </button>

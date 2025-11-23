@@ -1,5 +1,5 @@
 // src/pages/Auth/Signup.tsx
-import { Chrome, Github, X } from "lucide-react"; // ← Added X for close button
+import { Chrome, Github, X } from "lucide-react";
 import SubmitBtn from "../../../shared/button/SubmitBtn";
 import TextField from "../../../shared/TextField";
 import { useState } from "react";
@@ -18,7 +18,7 @@ function Signup() {
 
   const [errors, setErrors] = useState<ValidationErrors>({});
   const [isLoading, setIsLoading] = useState(false);
-  const [showEmailExistsModal, setShowEmailExistsModal] = useState(false); // ← Modal state
+  const [showEmailExistsModal, setShowEmailExistsModal] = useState(false);
 
   const { login } = useAuth();
   const navigate = useNavigate();
@@ -49,19 +49,17 @@ function Signup() {
     setIsLoading(true);
 
     try {
-      // Check if email exists
       const checkRes = await fetch(
         `http://localhost:3000/users?email=${encodeURIComponent(formData.email.trim())}`
       );
       const existing = await checkRes.json();
 
       if (existing.length > 0) {
-        setShowEmailExistsModal(true); // ← Show modal only
+        setShowEmailExistsModal(true);
         setIsLoading(false);
         return;
       }
 
-      // Create account
       const userToStore = {
         name: formData.name.trim(),
         email: formData.email.trim(),
@@ -81,7 +79,7 @@ function Signup() {
       login(savedUser);
       navigate("/dashboard");
     } catch (err) {
-      setShowEmailExistsModal(true); // Reuse modal for any error if you want
+      setShowEmailExistsModal(true);
     } finally {
       setIsLoading(false);
     }
@@ -89,38 +87,40 @@ function Signup() {
 
   return (
     <>
-      {/* Your Original Beautiful UI — 100% Untouched */}
-      <div className="h-screen w-screen bg-[rgb(75,119,212)] flex justify-center items-center">
-        <div className="px-2 py-2 flex bg-white rounded-2xl overflow-hidden">
-          <main
-            className="h-[660px] w-[500px] bg-[url('/Backdrop.jpg')] bg-center bg-cover bg-no-repeat 
-            [clip-path:polygon(0_0,100%_0,88%_100%,0_100%)] rounded-2xl"
-          ></main>
+      {/* Full Responsive Container */}
+      <div className="h-screen w-screen bg-[rgb(75,119,212)] flex justify-center items-center p-4">
+        <div className="flex bg-white rounded-2xl p-1.5 overflow-hidden max-w-6xl w-full shadow-2xl">
+          {/* LEFT: Backdrop Image — Hidden on mobile, shown on md+ */}
+          <div
+            className="hidden md:block h-[660px] w-[600px] bg-[url('/Backdrop.jpg')] bg-center bg-cover bg-no-repeat 
+                       [clip-path:polygon(0_0,100%_0,88%_100%,0_100%)] flex-shrink-0 rounded-2xl"
+            aria-hidden="true"
+          />
 
+          {/* RIGHT: Form — Full width on mobile */}
           <form
             onSubmit={handleSubmit}
-            className="h-[660px] flex flex-col gap-3 justify-center items-center py-4 px-6 flex-1"
+            className="h-[660px] w-full md:w-[500px] flex flex-col gap-3 justify-center items-center py-4 px-6 md:px-10"
           >
-            <div className="flex gap-1.5 mb-2">
+            <div className="flex gap-0.5 mb-1 mt-1">
               <img src="/logo_3.png" alt="Quiz Bay Logo" className="h-[90px]" />
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-800 flex items-center">
                 Quiz Bay
               </h1>
             </div>
 
-            <h1 className="text-[25px] tracking-tight font-extrabold text-gray-800 flex items-center">
+            <h1 className="text-[25px] tracking-tight font-extrabold text-gray-800">
               Create your account
             </h1>
 
             <div className="flex gap-8 mb-2 justify-center">
-              <span className="p-2 border flex justify-center items-center rounded">
+              <span className="p-2 border flex justify-center items-center rounded cursor-pointer hover:bg-gray-50 transition">
                 <Github size={20} className="inline-block mr-2 text-gray-700" />
                 <p className="font-bold text-[12px]">
-                  Sign up with <span className="text-green-800">GitHub </span>
+                  Sign up with <span className="text-green-800">GitHub</span>
                 </p>
               </span>
-
-              <span className="p-2 border flex justify-center items-center rounded">
+              <span className="p-2 border flex justify-center items-center rounded cursor-pointer hover:bg-gray-50 transition">
                 <Chrome size={20} className="inline-block mr-2 text-gray-700" />
                 <p className="font-bold text-[12px]">
                   Sign up with <span className="text-green-800">Google</span>
@@ -167,9 +167,11 @@ function Signup() {
               onChange={handleInputChange}
               error={errors.confirmPassword}
             />
-
+  
             <NavLink to="/login">
-              <p>Already have an account? <span className="text-blue-600">Log in</span></p>
+              <p className="text-sm">
+                Already have an account? <span className="text-blue-600 font-semibold">Log in</span>
+              </p>
             </NavLink>
 
             <SubmitBtn label="Sign Up" isDisabled={isDisabled} isLoading={isLoading} />
@@ -177,7 +179,7 @@ function Signup() {
         </div>
       </div>
 
-      {/* Beautiful Centered Modal — Does NOT affect form layout */}
+      {/* Modal — Unchanged & Beautiful */}
       {showEmailExistsModal && (
         <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-2xl shadow-2xl max-w-sm w-full p-8 animate-in fade-in zoom-in duration-200">
